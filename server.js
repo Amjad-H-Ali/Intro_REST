@@ -5,21 +5,31 @@ const app = express();
 
 const fruits = require('./models/fruits.js')
 
+	
 
 //lets make an index route
 app.get('/fruits', (req,res)=>{
-	res.send(fruits);
+	res.render('index.ejs',{
+		fruitList: fruits
+	})
+	
 })
+
+
+
 
 //lets make a show route
 app.get('/fruits/:id', (req, res)=>{
 	// res.send(fruits[req.params.id])
 	//Render Tempaltes
 	//your data you want to display is the second parameter. It is an object.
+
 	res.render('show.ejs',{
-		fruit: fruits[req.params.id]
+		fruit: fruits[req.params.id],
+
 	})
 })
+
 
 
 
