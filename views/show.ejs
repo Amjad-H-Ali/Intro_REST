@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>Fruits</h1>
+
+	<!-- Lets make a template to show our data. The data between these brackets is the object you passed in -->
+
+	The <%=fruit.name; %> is <%=fruit.color;%>.
+
+	<!-- note: the <%= %> tag is for expressions -->
+
+	<!-- the <% %> lets You add JS code -->
+
+	<%if (fruit.ripe === true){%>
+		The fruit is ready to eat.
+		<%}else{%>
+		The fruit is Not ready to eat.
+		<%}%>
+
+
+
+</body>
+</html>

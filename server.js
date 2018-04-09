@@ -13,7 +13,12 @@ app.get('/fruits', (req,res)=>{
 
 //lets make a show route
 app.get('/fruits/:id', (req, res)=>{
-	res.send(fruits[req.params.id])
+	// res.send(fruits[req.params.id])
+	//Render Tempaltes
+	//your data you want to display is the second parameter. It is an object.
+	res.render('show.ejs',{
+		fruit: fruits[req.params.id]
+	})
 })
 
 

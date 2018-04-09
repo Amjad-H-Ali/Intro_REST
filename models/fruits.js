@@ -11,7 +11,7 @@ const fruits = [
 	},
 	{
 		name:'orange',
-		color:'green',
+		color:'red',
 		ripe:false
 	}
 ];
