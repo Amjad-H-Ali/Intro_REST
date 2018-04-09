@@ -3,7 +3,12 @@ const app = express();
 
 
 
+const fruits = ['apple','banana','orange'];
 
+//lets make an index route
+app.get('/fruits', (req,res)=>{
+	res.send(fruits);
+})
 
 
 
